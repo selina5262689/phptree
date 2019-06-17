@@ -8,7 +8,7 @@
             "email": "1423782121@qq.com"
         }
     ],
-    "minimum-stability": "dev-master",
+    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
