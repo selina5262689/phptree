@@ -63,9 +63,7 @@ class Tree {
 
 		foreach ($data as $item) {
 			if (isset($parent[$item[self::$parentId]])) {
-				if(isset($parent[$item[self::$parentId]][self::$children])) {
-					$parent[$item[self::$parentId]][self::$children][] = &$parent[$item[self::$primary]];
-				}
+				$parent[$item[self::$parentId]][self::$children][] = &$parent[$item[self::$primary]];
 			} else {
 				$result[] = &$parent[$item[self::$primary]];
 			}
